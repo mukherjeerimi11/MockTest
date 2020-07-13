@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "required": false,
+  "javaType": "com.hackathon.mocktest.dto.client.services.Wrapper",
+  "additionalProperties": false,
+  "properties": {
+    "mockTestResponse": {
+      "type": "object",
+      "required": false,
+      "javaType": "com.hackathon.mocktest.dto.client.services.MockTest",
+      "properties": {
+        "mockTestId": {
+          "type": "string"
+        },
+        "organizationId": {
+          "type": "string"
+        },
+        "subjectCode": {
+          "type": "string"
+        },
+        "associateId": {
+          "type": "string"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": false,
+            "additionalProperties": false,
+            "properties": {
+              "questionId": {
+                "type": "string"
+              },
+              "question": {
+                "type": "string"
+              },
+              "answerForOption": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "correctAnswer": {
+                "type": "string"
+              },
+              "marks": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

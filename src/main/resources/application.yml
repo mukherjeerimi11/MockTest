@@ -1,0 +1,25 @@
+spring:
+  data:
+    mongodb:
+       uri: mongodb+srv://dbUser:dbUserPassword@cluster0.atuvx.mongodb.net/mocktestDb?ssl=true&retryWrites=true&maxIdleTimeMS=500000&w=majority
+       database: mocktestDb
+       prepare.database: mocktestDb
+       prepare.port: 28717
+       prepare.autoConnectRetry: true
+       prepare.socketKeepAlive: true 
+       prepare.socketTimeout: 1500
+       prepare.maxConnectionIdleTime: 60000
+       prepare.maxConnectionLifeTime: 0
+
+swagger:
+   api-info:
+      title: MockTest Service Api Documentation
+      description: Mock Test API Details
+      version: v1.0
+      termsOfServiceUrl: test
+      contact:
+         name: Hackathon
+         email: rimi.mukherjee@cognizant.com
+      license: Apache 2.0
+      licenseUrl: http://www.apache.org/licenses/LICENSE-2.0
+      
